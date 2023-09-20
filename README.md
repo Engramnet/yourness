@@ -13,17 +13,17 @@ mkdir output
 # Overwriting the config files and generating the EL and CL genesis
 docker run --rm -it -u $UID -v $PWD/output:/data \
   -v $PWD/config-example:/config \
-  avenbreak/engram-gen-builder:latest all
+  engramnet/genesis-fork:latest all
 
 # Just creating the EL genesis
 docker run --rm -it -u $UID -v $PWD/output:/data \
   -v $PWD/config-example:/config \
-  avenbreak/engram-gen-builder:latest el
+  engramnet/genesis-fork:latest el
 
 # Just creating the CL genesis
 docker run --rm -it -u $UID -v $PWD/output:/data \
   -v $PWD/config-example:/config \
-  avenbreak/engram-gen-builder:latest cl
+  engramnet/genesis-fork:latest cl
 ```
 ### Environment variables
 
