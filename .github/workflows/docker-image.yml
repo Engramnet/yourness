@@ -27,7 +27,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: avenbreak/engram-gen-builder:latest
+          images: engramnet/genesis-fork
           flavor: latest=true
           tags: |
             type=ref,event=branch
